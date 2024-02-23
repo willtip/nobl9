@@ -1,0 +1,14 @@
+name: Nobl9 GitHub Actions Demo
+on: [push]
+jobs:
+  nobl9:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - uses: nobl9/nobl9-action@v0.2.7
+        with:
+          client_id: 0oa7ymezkeaLVYgCq417
+          client_secret: nCkc18_ciS62-VxOGHUK9WjN5ZVllnwB3yyqw5Etr610lbEOQJt1vOJVYNW93AAC
+          sloctl_yml: "slos.yaml"
+            
